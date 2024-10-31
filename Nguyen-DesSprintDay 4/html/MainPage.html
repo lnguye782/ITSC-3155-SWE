@@ -14,23 +14,32 @@
         }
 
         header {
-            background-color: #4CAF50;
-            padding: 10px;
-            text-align: center;
+            background-color: #4CAF50; /* Green Background*/
+            padding: 10px 0;
+            text-align: left;
             color: white;
         }
 
+        header h1 {
+            margin-left: 40px;
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-block;
+        }
+
         nav {
-            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             background-color: #333;
-            padding: 10px 0;
+            padding: 10px 20px;
         }
 
         nav a {
-            color: rgba(255, 255, 255, 0.438);
+            color: white;
             margin: 0 15px;
             text-decoration: none;
-            font-size: 18px;
+            font-size: 16px;
         }
 
         nav a:hover {
@@ -43,9 +52,23 @@
             margin: 0 auto;
         }
 
+        .nav-button {
+            background-color: #FF8C00; /* Orange color for button */
+            color: white;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .nav-button:hover {
+            background-color: #e07b00; /* Dark orange on hover */
+        }
+
         footer {
             background-color: #333;
-            color: rgba(255, 255, 255, 0.192);
+            color: white;
             text-align: center;
             padding: 10px 0;
             margin-top: 20px;
@@ -56,14 +79,17 @@
 <body>
 
 <header>
-    <h1>Student Organization Explorer</h1>
+    <h1>student organization explorer</h1>
 </header>
 
 <!-- Navigation Bar -->
 <nav>
-    <a href="MainPage.html">Home</a>
-    <a href="Resources.html">Resources</a>
-    <a href="Map.html">Interactive Map</a>
+    <div>
+        <a href="MainPage.html">Student Organization</a>
+        <a href="Resources.html">Resources</a>
+        <a href="Map.html">Live Event Map</a>
+    </div>
+    <a href="#" class="nav-button">Find Online Programs</a>
 </nav>
 
 <div class="container">
@@ -73,7 +99,7 @@
     <h3>Explore the sections:</h3>
     <ul>
         <li><a href="resources.html">Check out our Resources page</a> for helpful guides and tools.</li>
-        <li><a href="map.html">Explore the Interactive Map</a> to locate student organizations and events.</li>
+        <li><a href="map.html">Explore the Map</a> to locate live events from student organizations.</li>
     </ul>
 </div>
 

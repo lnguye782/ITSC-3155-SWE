@@ -85,7 +85,7 @@
 <!-- JavaScript to Initialize the Map -->
 <script>
     // Initialize the map
-    var map = L.map('map').setView([35.308072, -80.733723], 16.5);  // Coordinates for UNC Charlotte
+    var map = L.map('map').setView([35.308072, -80.733723], 16);  // Coordinates for UNC Charlotte
 
     // Load map tiles from OpenStreetMap
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -93,9 +93,15 @@
     }).addTo(map);
 
     // Add a marker for a student organization event
-    var marker = L.marker([35.305286148109026, -80.73198255562818]).addTo(map)
+    var marker = L.marker([35.306289, -80.734009]).addTo(map)
         .bindPopup("<b>Vietnamese Student Association</b><br>Click here for more info.")
         .openPopup();
+
+    var marker1 = L.marker([35.305286148109026, -80.73198255562818]).addTo(map)
+        .bindPopup("<b>Southeast Asian Student Association</b><br>Click here for more info.")
+
+    var marker2 = L.marker([35.304989, -80.730119]).addTo(map)
+        .bindPopup("<b>Latin American Student Organization</b><br>Click here for more info.")
 </script>
 
 <!-- Footer -->
